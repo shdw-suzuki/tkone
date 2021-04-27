@@ -71,10 +71,26 @@ section.list h4.close {
 
 <h2 id="s1_hdr" class="close">【tahpro】マネジメント・企画・映像制作</h2>
 <div class="flex" id="s1_info">
-<p class="flex-item1">
-  <iframe src="https://shdw-suzuki.github.io/view/sample1.html" height="520px">    
-  </iframe>
-</p>
+<div class="flex-item1">
+<ul id="mainimage">
+  <li><iframe src="https://shdw-suzuki.github.io/view/sample1.html" height="520px"></iframe></li>
+  <li style="display: none;"><iframe src="https://shdw-suzuki.github.io/view/sample2.html" height="520px"></iframe></li>
+  <li style="display: none;"><iframe src="https://shdw-suzuki.github.io/view/sample3.html" height="520px"></iframe></li>
+</ul>
+<ul id="btn">
+	<li style="float: left; padding-right:100px;">Ⅰ</li>
+	<li style="float: left; padding-right:100px;">Ⅱ</li>
+	<li style="float: left;">Ⅲ</li>
+</ul>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+$("#btn li").click(function(){
+	var num = $("#btn li").index(this);
+	$("#mainimage li").hide();
+	$("#mainimage li").eq(num).show();
+});
+</script>
+</div>
 <p class="flex-item2">
 <br><br>
 ★　基本の流れ<br><br>
@@ -86,7 +102,7 @@ section.list h4.close {
 </div>
 
 </article>
-<p><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+<p style="padding-top:50px;"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
 
 </div>
 
